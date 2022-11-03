@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>QUESTÃO 5-A</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+      function desenhos() {
+        let canvas = document.querySelector("canvas");
+        let ctx = canvas.getContext("2d");
+
+        //figura 01:
+        ctx.strokeStyle = "#993399";
+        ctx.beginPath();
+        ctx.strokeRect(30, 80, 150, 100);
+
+        ctx.beginPath();
+        ctx.moveTo(60, 150);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(140, 150);
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        //figura 02:
+        ctx.beginPath();
+        ctx.arc(320, 130, 62, 0, 2 * Math.PI);
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(320, 130, 60, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(285, 95, 70, 70);
+        ctx.stroke();
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        //figura 03:
+        ctx.beginPath();
+        ctx.moveTo(620, 100);
+        ctx.lineTo(560, 180);
+        ctx.lineTo(680, 180);
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(620, 100);
+        ctx.lineTo(561, 180);
+        ctx.lineTo(679, 179);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(555, 100);
+        ctx.lineTo(500, 180);
+        ctx.lineTo(610, 180);
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(555, 100);
+        ctx.lineTo(501, 179);
+        ctx.lineTo(609, 179);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(586, 145);
+        ctx.lineTo(559, 179);
+        ctx.lineTo(609, 179);
+        ctx.fillStyle = "#993399";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(586, 145);
+        ctx.lineTo(559, 179);
+        ctx.lineTo(609, 179);
+        ctx.fillStyle = "white";
+        ctx.fill();
+      }
+    </script>
+  </head>
+  <body onload="desenhos()">
+    <canvas width="800" height="400" style="border: none"></canvas>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>QUESTÃO 5-B</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+      function desenhos() {
+        let canvas = document.querySelector("canvas");
+        let ctx = canvas.getContext("2d");
+
+        for (let i = 0; i < 6; i++) {
+          for (let j = 0; j < 3; j++) {
+            ctx.strokeStyle = "#993399";
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.strokeRect(10 + i * 70, 10 + j * 70, 60, 60);
+
+            ctx.fillStyle = "#993399";
+            ctx.beginPath();
+            ctx.moveTo(20 + i * 71, 50 + j * 70);
+            ctx.lineTo(50 + i * 71, 50 + j * 70);
+            ctx.lineTo(35 + i * 71, 20 + j * 70);
+            ctx.closePath();
+            ctx.stroke();
+          }
+        }
+      }
+    </script>
+  </head>
+  <body onload="desenhos()">
+    <canvas width="800" height="400" style="border: none"></canvas>
+  </body>
+</html>
